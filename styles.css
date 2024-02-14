@@ -234,7 +234,7 @@ ul li::before {
   background-image: url(./images/icons8-circle-96.png);
   background-size: cover;
   background-position: center;
-  top: 0.8px;
+  top: 2px;
   left: 4px
 }
 
@@ -250,8 +250,8 @@ ul li.task-finished::before {
 ul li span {
   position: absolute;
   right: 10px;
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   color: rgba(2, 101, 172, 0.634);
   font-size: 20px;
   text-align: center;
