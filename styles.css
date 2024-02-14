@@ -139,3 +139,128 @@ footer {
   text-align: center;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, .1);
 }
+
+/* Медиазапрос для планшетных устройств */
+@media (max-width: 1024px) {
+  .container-end {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 350px);
+  }
+  
+  .gallery img {
+    margin-right: 10%;
+  }
+
+  .social {
+    width: 45%;
+  }
+}
+
+/* Медиазапрос для мобильных телефонов */
+@media (max-width: 768px) {
+ .search-box {
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  padding: 3%;
+  background-color: rgb(210, 252, 255);
+  border-radius: 2em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+ }
+
+ .main-text {
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2em;
+  font-family: 'Kanit-Regular';
+  font-size: 1em;
+  color: rgb(0, 149, 255);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 15px;
+  border-radius: 3em;
+  border: none;
+  outline: none;
+  background-color: rgba(80, 144, 193, 0.555);
+  margin-left: auto;
+  width: 700px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+}
+
+button {
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+  font-family: 'Kanit-Regular';
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 3em;
+  border: none;
+  outline: none;
+  background-color: rgb(80, 144, 193, 0.555);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1em;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(210, 252, 255);
+  border-radius: 2em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+  font-family: 'Kanit-Regular';
+  padding-left: 11%;
+  color: rgb(0, 149, 255);
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./images/icons8-circle-96.png);
+  background-size: cover;
+  background-position: center;
+  top: 0.8px;
+  left: 4px
+}
+
+ul li.task-finished {
+  color: rgba(2, 101, 172, 0.634);;
+  text-decoration: line-through;
+}
+
+ul li.task-finished::before {
+  background-image: url(./images/icons8-checkmark-ios-17-filled-96.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 10px;
+  top: 1.5px;
+  width: 25px;
+  height: 25px;
+  color: rgba(2, 101, 172, 0.634);
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+span:hover {
+  background-color: rgba(2, 101, 172, 0.634);
+}
+}
