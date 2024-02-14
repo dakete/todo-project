@@ -250,8 +250,8 @@ ul li.task-finished::before {
 ul li span {
   position: absolute;
   right: 10px;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   color: rgba(2, 101, 172, 0.634);
   font-size: 28px;
   text-align: center;
