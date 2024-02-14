@@ -157,7 +157,7 @@ footer {
 }
 
 /* Медиазапрос для мобильных телефонов */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
  .search-box {
   margin-top: 10%;
   margin-right: 10%;
@@ -208,8 +208,10 @@ button {
 }
 
 ul li {
+  text-align: center;
+  font-family: 'Kanit-Regular';
+  font-size: 1em;
   list-style: none;
-  font-size: 1.5em;
   padding: 0.5%;
   margin-left: 20%;
   margin-right: 10%;
@@ -250,12 +252,12 @@ ul li.task-finished::before {
 ul li span {
   position: absolute;
   right: 10px;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   color: rgba(2, 101, 172, 0.634);
-  font-size: 20px;
+  font-size: 10px;
   text-align: center;
-  line-height: 25px;
+  line-height: 20px;
   border-radius: 50%;
 }
 
