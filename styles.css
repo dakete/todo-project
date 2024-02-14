@@ -234,7 +234,7 @@ ul li::before {
   background-image: url(./images/icons8-circle-96.png);
   background-size: cover;
   background-position: center;
-  top: 2px;
+  top: 10px;
   left: 4px
 }
 
